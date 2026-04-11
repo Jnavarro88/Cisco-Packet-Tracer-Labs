@@ -59,7 +59,6 @@ router ospf 1
  
  network 10.0.0.4 0.0.0.3 area 0
  
-!
 
 <br>
 Key Configuration (Router 2)
@@ -112,7 +111,7 @@ router ospf 1
  
  network 10.0.0.12 0.0.0.3 area 0
 
- 
+ <br>
 Key Configuration (Router 3)
 
 ip dhcp excluded-address 192.168.12.1 192.168.12.20
@@ -161,7 +160,7 @@ router ospf 1
  
  network 10.0.0.20 0.0.0.3 area 0
 
- 
+ <br>
 Key Configuration (Router 4)
 
 interface Serial0/0/0
@@ -202,7 +201,7 @@ router ospf 1
  
  network 10.0.0.28 0.0.0.3 area 0
 
- 
+ <br>
 Key Configuration (Router 5)
 
 interface Serial0/0/0
@@ -245,6 +244,7 @@ router ospf 1
  
  network 10.0.0.24 0.0.0.3 area 0
 
+<br>
 Key Configuration (Router 6)
 
 
