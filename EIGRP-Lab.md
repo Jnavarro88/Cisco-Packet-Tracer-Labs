@@ -19,7 +19,7 @@ Topology: Multi-router mesh with redundant pathing.
 ⚙️ Configuration & Implementation Logic
 <br>
 
-Router A
+--Router A--
 
 ip dhcp excluded-address 192.168.10.1 192.168.10.10
 
@@ -74,7 +74,7 @@ router eigrp 1
  <br>
 
  
-Router B
+--Router B--
 
 ip dhcp excluded-address 192.168.20.1 192.168.20.10
 
@@ -129,7 +129,7 @@ router eigrp 1
  <br>
 
 
- Router C
+ --Router C--
 
 interface GigabitEthernet0/0.30
 
@@ -186,6 +186,34 @@ router eigrp 1
 
  <br>
 
- Router D
+ --Router D--
+
+ interface GigabitEthernet0/0
+ 
+ ip address 10.0.0.14 255.255.255.252
+ 
+ duplex auto
+ 
+ speed auto
+ 
+!
+
+interface GigabitEthernet0/1
+
+ ip address 10.0.0.18 255.255.255.252
+ 
+ duplex auto
+ 
+ speed auto
+ 
+ !
+ 
+router eigrp 1
+
+ network 10.0.0.12 0.0.0.3
+ 
+ network 10.0.0.16 0.0.0.3
+
+ <br>
 
  
