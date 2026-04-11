@@ -61,7 +61,7 @@ router ospf 1
  
 !
 
-
+<br>
 Key Configuration (Router 2)
 
 ip dhcp excluded-address 192.168.11.1 192.168.11.20
