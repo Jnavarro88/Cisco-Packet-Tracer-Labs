@@ -8,7 +8,7 @@ Cisco Certified Support Technician (CCST) / CCNA Candidate Specializing in Dynam
 
 🛰️ Routing & Switching
 
-Dynamic Routing: [OSPF](OSPF-Lab.md), [EIGRP](EIGRP-Lab.md)-, RIPv2, Static Routes.
+Dynamic Routing: [OSPF](OSPF-Lab.md), [EIGRP](EIGRP-Lab.md), RIPv2, Static Routes.
 
 VLAN Management: 802.1Q Trunking, Inter-VLAN Routing (ROAS).
 
