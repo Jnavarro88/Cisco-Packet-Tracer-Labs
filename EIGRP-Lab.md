@@ -219,6 +219,7 @@ router eigrp 1
  <img width="878" height="881" alt="Image" src="https://github.com/user-attachments/assets/b5ee1b77-536e-495a-a4c7-e10e8dc0da0a" />
 
 
+<img width="879" height="885" alt="Image" src="https://github.com/user-attachments/assets/c88b4c37-69b1-4462-964a-6b3b69cce581" />
 
 
 
