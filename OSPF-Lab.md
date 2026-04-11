@@ -296,6 +296,11 @@ To verify the solution, a traceroute was performed from the farthest edges of th
 
 Result: The trace shows a clear [X]-hop path with 0% packet loss, confirming full reachability across the backbone.
 
+
+ 
+<img width="828" height="749" alt="Image" src="https://github.com/user-attachments/assets/9644165d-01e9-4f64-8193-3d32356d5b5f" />
+
+
 📝 Key Takeaways
 
 Convergence: OSPF converged the entire 6-router network in under 10 seconds.
@@ -303,8 +308,5 @@ Convergence: OSPF converged the entire 6-router network in under 10 seconds.
 Scalability: The use of Area 0 allows for easy expansion into a Multi-Area OSPF design for larger enterprise branches.
 
 Efficiency: Implementing passive-interface on user-facing LANs reduced CPU overhead and increased security.
- 
-<img width="828" height="749" alt="Image" src="https://github.com/user-attachments/assets/9644165d-01e9-4f64-8193-3d32356d5b5f" />
-
 
 [Home Page](README.md)
