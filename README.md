@@ -10,10 +10,6 @@ This lab demonstrates a 6-router topology using OSPF to share routing informatio
 
 Key Configuration (Router 1)
 
-!
-
-!
-
 ip dhcp excluded-address 192.168.10.1 192.168.10.20
 
 !
