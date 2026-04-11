@@ -18,9 +18,64 @@ Topology: Core Switch to Distribution Switch aggregation.
 
 ⚙️ Configuration & Implementation Logic
 
-For this lab, I configured the interfaces in Desirable mode. This ensures the switch actively negotiates with the neighbor to form the EtherChannel bundle.
+For this lab I ensured the switch actively negotiates with the neighbor to form the EtherChannel bundle.
 
-Switch Configuration (PAgP)
+--Switch 1--
+
+interface FastEthernet0/21
+
+ switchport mode trunk
+ 
+ channel-protocol pagp
+ 
+ channel-group 1 mode auto
+ 
+ spanning-tree cost 18
+ 
+ spanning-tree guard root
+ 
+!
+
+interface FastEthernet0/22
+
+ switchport mode trunk
+ 
+ channel-protocol pagp
+ 
+ channel-group 1 mode auto
+ 
+ spanning-tree cost 18
+ 
+ spanning-tree guard root
+ 
+!
+
+interface FastEthernet0/23
+
+ switchport mode trunk
+ 
+ channel-protocol pagp
+ 
+ channel-group 1 mode auto
+ 
+ spanning-tree cost 18
+ 
+ spanning-tree guard root
+ 
+!
+
+interface FastEthernet0/24
+
+ switchport mode trunk
+ 
+ channel-protocol pagp
+ 
+ channel-group 1 mode auto
+ 
+ spanning-tree cost 18
+ 
+ spanning-tree guard root
+ 
 
 ✅ Solution Validation (The Proof)
 
