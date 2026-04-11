@@ -6,7 +6,7 @@ This repository contains my CCNA-level routing labs focusing on dynamic route pr
 
 This lab demonstrates a 6-router topology using OSPF to share routing information across different areas.
 
-(OSPF_Topology.png)
+OSPF_Topology.png
 
 Key Configuration (Router 1)
 Key Configuration (Router 2)
