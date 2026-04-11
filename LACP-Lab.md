@@ -12,7 +12,7 @@ Configuration: Multi-link trunking between Distribution and Access switches.
 
 Redundancy: Automatic failover if a physical link in the bundle fails.
 
-Topology Diagram
+<img width="519" height="314" alt="Image" src="https://github.com/user-attachments/assets/a1b97c3d-f254-4f9d-833d-7c28237bf1d5" />
 
 ⚙️ Configuration & Implementation Logic
 
