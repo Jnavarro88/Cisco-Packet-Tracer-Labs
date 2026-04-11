@@ -77,6 +77,103 @@ interface FastEthernet0/24
  spanning-tree guard root
  
 
+ --Switch 2--
+
+ interface FastEthernet0/21
+ 
+ switchport mode trunk
+ 
+ channel-protocol pagp
+ 
+ channel-group 1 mode auto
+ 
+ spanning-tree cost 18
+ 
+ spanning-tree guard root
+ 
+!
+
+interface FastEthernet0/22
+
+ switchport mode trunk
+ 
+ channel-protocol pagp
+ 
+ channel-group 1 mode auto
+ 
+ spanning-tree cost 18
+ 
+ spanning-tree guard root
+ 
+!
+
+interface FastEthernet0/23
+
+ switchport mode trunk
+ 
+ channel-protocol pagp
+ 
+ channel-group 1 mode auto
+ 
+ spanning-tree cost 18
+ 
+ spanning-tree guard root
+ 
+!
+
+interface FastEthernet0/24
+
+ switchport mode trunk
+ 
+ channel-protocol pagp
+ 
+ channel-group 1 mode auto
+ 
+ spanning-tree cost 18
+ 
+ spanning-tree guard root
+
+ --Switch 3--
+
+ interface FastEthernet0/23
+ 
+ switchport mode trunk
+ 
+ channel-protocol pagp
+ 
+ channel-group 1 mode auto
+ 
+!
+
+interface FastEthernet0/24
+
+ switchport mode trunk
+ 
+ channel-protocol pagp
+ 
+ channel-group 1 mode auto
+
+ --Switch 4--
+
+ interface FastEthernet0/23
+ 
+ switchport mode trunk
+ 
+ channel-protocol pagp
+ 
+ channel-group 1 mode auto
+ 
+!
+
+interface FastEthernet0/24
+
+ switchport mode trunk
+ 
+ channel-protocol pagp
+ 
+ channel-group 1 mode auto
+ 
+
 ✅ Solution Validation (The Proof)
 
 1. EtherChannel Summary Analysis
