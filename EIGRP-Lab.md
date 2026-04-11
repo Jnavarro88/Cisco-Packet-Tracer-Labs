@@ -14,7 +14,7 @@ Metric: Composite (Bandwidth + Delay)
 
 Topology: Multi-router mesh with redundant pathing.
 
-Topology Diagram
+<img width="1136" height="689" alt="Image" src="https://github.com/user-attachments/assets/555cc632-ea6a-44a6-b4a2-8ad7290b8319" />
 
 ⚙️ Configuration & Implementation Logic
 
