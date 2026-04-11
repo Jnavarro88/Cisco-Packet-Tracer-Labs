@@ -280,9 +280,6 @@ router ospf 1
  network 10.0.0.28 0.0.0.3 area 0
 
 <br>
-
- <img width="878" height="889" alt="Image" src="https://github.com/user-attachments/assets/35d72e7d-fa4d-4072-9604-453e75983305" />
-
 ✅ Solution Validation (The Proof)
 
 1. Routing Table Analysis
@@ -291,9 +288,7 @@ The routing table below confirms that the OSPF Shortest Path First (SPF) algorit
 
 Verification: Note the 'O' codes and the Administrative Distance of 110, proving the routes are learned via OSPF.
 
- 
-<img width="828" height="749" alt="Image" src="https://github.com/user-attachments/assets/9644165d-01e9-4f64-8193-3d32356d5b5f" />
-
+ <img width="878" height="889" alt="Image" src="https://github.com/user-attachments/assets/35d72e7d-fa4d-4072-9604-453e75983305" />
 
 2. End-to-End Connectivity (Traceroute)
 
@@ -308,3 +303,8 @@ Convergence: OSPF converged the entire 6-router network in under 10 seconds.
 Scalability: The use of Area 0 allows for easy expansion into a Multi-Area OSPF design for larger enterprise branches.
 
 Efficiency: Implementing passive-interface on user-facing LANs reduced CPU overhead and increased security.
+ 
+<img width="828" height="749" alt="Image" src="https://github.com/user-attachments/assets/9644165d-01e9-4f64-8193-3d32356d5b5f" />
+
+
+
