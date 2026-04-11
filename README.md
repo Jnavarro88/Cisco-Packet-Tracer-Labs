@@ -65,6 +65,54 @@ router ospf 1
 !
 
 Key Configuration (Router 2)
+
+ip dhcp excluded-address 192.168.11.1 192.168.11.20
+
+!
+
+ip dhcp pool NETWORK-2
+
+ network 192.168.11.0 255.255.255.0
+ 
+ default-router 192.168.11.1
+ 
+ dns-server 8.8.8.8
+ 
+!
+
+interface GigabitEthernet0/0.20
+
+ encapsulation dot1Q 20
+ 
+ ip address 192.168.11.1 255.255.255.0
+ 
+!
+
+interface Serial0/3/0
+
+ ip address 10.0.0.10 255.255.255.252
+ 
+ clock rate 2000000
+ 
+!
+
+interface Serial0/3/1
+
+ ip address 10.0.0.13 255.255.255.252
+ 
+ clock rate 2000000
+ 
+!
+router ospf 1
+
+ log-adjacency-changes
+ 
+ network 10.0.0.8 0.0.0.3 area 0
+ 
+ network 192.168.11.0 0.0.0.255 area 0
+ 
+ network 10.0.0.12 0.0.0.3 area 0
+ 
 Key Configuration (Router 3)
 Key Configuration (Router 4)
 Key Configuration (Router 5)
