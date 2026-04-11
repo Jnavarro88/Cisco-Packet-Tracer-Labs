@@ -264,4 +264,11 @@ router ospf 1
  network 10.0.0.24 0.0.0.3 area 0
  
  network 10.0.0.28 0.0.0.3 area 0
+
+<br>
+Validation:
+
+
+ <img width="878" height="889" alt="Image" src="https://github.com/user-attachments/assets/35d72e7d-fa4d-4072-9604-453e75983305" />
+
  
