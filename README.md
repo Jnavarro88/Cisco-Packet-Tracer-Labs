@@ -1,5 +1,15 @@
-# Cisco-Packet-Tracer-Labs
-A collection of CCNA-level network simulations featuring OSPF/EIGRP routing, Layer 2 security, and high-availability configurations.
+Cisco Networking Labs - Routing Protocols
 
-  Objective: "Configure and verify a multi-router environment using OSPF and EIGRP to demonstrate dynamic route propagation and path selection."
-  Configuration Process: 
+This repository contains my CCNA-level routing labs focusing on dynamic route propagation and multi-router connectivity.
+
+1. OSPF Multi-Area Configuration
+
+This lab demonstrates a 6-router topology using OSPF to share routing information across different areas.
+
+Key Configuration (Router 1)
+Key Configuration (Router 2)
+Key Configuration (Router 3)
+Key Configuration (Router 4)
+Key Configuration (Router 5)
+Key Configuration (Router 6)
+
