@@ -8,6 +8,7 @@ This lab demonstrates a 6-router topology using OSPF to share routing informatio
 
 <img width="1136" height="689" alt="Image" src="https://github.com/user-attachments/assets/80e0f83d-b812-4ea1-baa0-410daa11bbb9" />
 
+
 Key Configuration (Router 1)
 
 ip dhcp excluded-address 192.168.10.1 192.168.10.20
@@ -99,6 +100,7 @@ interface Serial0/3/1
  clock rate 2000000
  
 !
+
 router ospf 1
 
  log-adjacency-changes
@@ -110,6 +112,53 @@ router ospf 1
  network 10.0.0.12 0.0.0.3 area 0
  
 Key Configuration (Router 3)
+
+ip dhcp excluded-address 192.168.12.1 192.168.12.20
+
+!
+
+ip dhcp pool NETWORK-3
+
+ network 192.168.12.0 255.255.255.0
+ 
+ default-router 192.168.12.1
+ 
+ dns-server 8.8.8.8
+ 
+!
+
+interface GigabitEthernet0/0.30
+
+ encapsulation dot1Q 30
+ 
+ ip address 192.168.12.1 255.255.255.0
+ 
+!
+
+interface Serial0/3/0
+
+ ip address 10.0.0.18 255.255.255.252
+ 
+ clock rate 2000000
+ 
+!
+
+interface Serial0/3/1
+
+ ip address 10.0.0.21 255.255.255.252
+
+!
+
+router ospf 1
+
+ log-adjacency-changes
+ 
+ network 10.0.0.16 0.0.0.3 area 0
+ 
+ network 192.168.12.0 0.0.0.255 area 0
+ 
+ network 10.0.0.20 0.0.0.3 area 0
+ 
 Key Configuration (Router 4)
 Key Configuration (Router 5)
 Key Configuration (Router 6)
