@@ -18,6 +18,7 @@ Topology: Multi-router mesh with redundant pathing.
 
 ⚙️ Configuration & Implementation Logic
 <br>
+
 Router A
 
 ip dhcp excluded-address 192.168.10.1 192.168.10.10
@@ -71,5 +72,120 @@ router eigrp 1
  network 10.0.0.8 0.0.0.3
 
  <br>
+
+ 
+Router B
+
+ip dhcp excluded-address 192.168.20.1 192.168.20.10
+
+!
+
+ip dhcp pool Router-b
+
+ network 192.168.20.0 255.255.255.0
+ 
+ default-router 192.168.20.1
+ 
+ dns-server 8.8.8.8
+ 
+ !
+ 
+interface GigabitEthernet0/0
+
+ ip address 10.0.0.2 255.255.255.252
+ 
+ duplex auto
+ 
+ speed auto
+ 
+ !
+ 
+interface GigabitEthernet0/1.1
+
+ encapsulation dot1Q 20
+ 
+ ip address 192.168.20.1 255.255.255.0
+ 
+!
+
+interface Serial0/0/0
+
+ ip address 10.0.0.10 255.255.255.252
+ 
+ clock rate 2000000
+ 
+!
+
+router eigrp 1
+
+ network 10.0.0.0 0.0.0.3
+ 
+ network 192.168.20.0
+ 
+ network 10.0.0.4 0.0.0.3
+ 
+ network 10.0.0.8 0.0.0.3
+
+ <br>
+
+
+ Router C
+
+interface GigabitEthernet0/0.30
+
+ encapsulation dot1Q 30
+ 
+ ip address 192.168.30.1 255.255.255.0
+ 
+!
+
+interface GigabitEthernet0/1
+
+ ip address 10.0.0.13 255.255.255.252
+ 
+ duplex auto
+ 
+ speed auto
+ 
+!
+
+interface GigabitEthernet0/2
+
+ ip address 10.0.0.17 255.255.255.252
+ 
+ duplex auto
+ 
+ speed auto
+ 
+!
+
+interface Serial0/3/0
+
+ ip address 10.0.0.6 255.255.255.252
+ 
+!
+interface Serial0/3/1
+
+ ip address 10.0.0.9 255.255.255.252
+ 
+!
+
+router eigrp 1
+
+ network 10.0.0.0 0.0.0.3
+ 
+ network 192.168.30.0
+ 
+ network 10.0.0.4 0.0.0.3
+ 
+ network 10.0.0.8 0.0.0.3
+ 
+ network 10.0.0.12 0.0.0.3
+ 
+ network 10.0.0.16 0.0.0.3
+
+ <br>
+
+ Router D
 
  
