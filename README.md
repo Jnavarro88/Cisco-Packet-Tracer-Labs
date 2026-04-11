@@ -8,7 +8,7 @@ This lab features a 6-router OSPF backbone. The goal was to achieve full reachab
 
 This lab demonstrates a 6-router topology using OSPF to share routing information across different areas.
 
-<img width="1136" height="689" alt="Image" src="https://github.com/user-attachments/assets/80e0f83d-b812-4ea1-baa0-410daa11bbb9" />
+<img width="792" height="717" alt="Image" src="https://github.com/user-attachments/assets/8ba2ba9d-bd99-4c36-a998-804153984f39" />
 
 
 Key Configuration (Router 1)
