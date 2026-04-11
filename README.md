@@ -160,7 +160,47 @@ router ospf 1
  network 10.0.0.20 0.0.0.3 area 0
  
 Key Configuration (Router 4)
+
+interface Serial0/0/0
+
+ ip address 10.0.0.30 255.255.255.252
+ 
+ clock rate 2000000
+ 
+!
+
+interface Serial0/2/0
+
+ ip address 10.0.0.17 255.255.255.252
+ 
+!
+
+interface Serial0/3/0
+
+ ip address 10.0.0.2 255.255.255.252
+ 
+!
+
+interface Serial0/3/1
+
+ ip address 10.0.0.9 255.255.255.252
+ 
+!
+
+router ospf 1
+
+ log-adjacency-changes
+ 
+ network 10.0.0.0 0.0.0.3 area 0
+ 
+ network 10.0.0.8 0.0.0.3 area 0
+ 
+ network 10.0.0.16 0.0.0.3 area 0
+ 
+ network 10.0.0.28 0.0.0.3 area 0
+ 
 Key Configuration (Router 5)
+
 Key Configuration (Router 6)
 
 
