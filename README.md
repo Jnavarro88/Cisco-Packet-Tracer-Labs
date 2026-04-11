@@ -1,6 +1,8 @@
-Cisco Networking Labs - Routing Protocols
+Cisco Networking Labs - OSPF Multi-Area Technical Report
 
-This repository contains my CCNA-level routing labs focusing on dynamic route propagation and multi-router connectivity.
+🏗️ Topology & Design
+
+This lab features a 6-router OSPF backbone. The goal was to achieve full reachability across Area 0 while maintaining a hierarchical network design.
 
 1. OSPF Multi-Area Configuration
 
