@@ -197,3 +197,5 @@ Cisco Proprietary Advantage: PAgP simplifies configuration in an all-Cisco envir
 Negotiation Modes: By using desirable mode, the switch actively seeks to form a bundle, whereas auto mode only responds to requests.
 
 Link Efficiency: Aggregating links prevents Spanning Tree from blocking one of the redundant paths, allowing both cables to carry traffic simultaneously.
+
+[Home Page](README.md)
