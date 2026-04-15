@@ -188,6 +188,8 @@ I used show pagp neighbor to verify the active negotiation between the two Cisco
 
 Result: The output confirms that the local switch is successfully seeing its neighbor and exchanging PAgP packets.
 
+<img width="873" height="890" alt="Image" src="https://github.com/user-attachments/assets/182ab37c-d1c3-47b3-b124-20d40f869c65" />
+
 📝 Key Takeaways
 
 Cisco Proprietary Advantage: PAgP simplifies configuration in an all-Cisco environment by automating the bundle negotiation.
