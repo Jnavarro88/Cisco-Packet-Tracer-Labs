@@ -12,7 +12,7 @@ Dynamic Routing: [OSPF](OSPF-Lab.md), [EIGRP](EIGRP-Lab.md), RIPv2, Static Route
 
 VLAN Management: 802.1Q Trunking, Inter-VLAN Routing (ROAS).
 
-Redundancy: EtherChannel (LACP/[PAgp](PAgp-Lab.md).
+Redundancy: EtherChannel (LACP/[PAgp](PAgp-Lab.md)).
 
 🔐 Network Security
 
